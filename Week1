@@ -1,0 +1,6 @@
+p=100
+r=2
+n=8
+A=p*((1+r)/100)**n
+ci=A-p
+print(round(ci,2))
