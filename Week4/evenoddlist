@@ -1,0 +1,56 @@
+Q) Even and odd
+
+
+def createlist(l,n):
+    l=[]
+    for i in range(n):
+        temp=int(input("Enter:"))
+        l.append(temp)
+    return l 
+    
+    
+def es(l):
+    esum=0
+    for i in range(len(l)):
+        if(i%2==0):
+            esum+=l[i]
+    return esum
+    
+def os(l):
+    osum=0
+    for i in range(len(l)):
+        if(i%2!=0):
+            osum+=l[i]
+    return osum
+    
+    
+    
+    
+l1=[]
+l2=[]
+l3=[]
+n1=int(input("Enter n1:"))
+n2=int(input("Enter n2:"))
+n3=int(input("Enter n3:"))
+l1=createlist(l1,n1)
+print(l1)
+l2=createlist(l2,n2)
+print(l2)
+l3=createlist(l3,n3)
+print(l3)
+
+es1=es(l1)
+print("es1",es1)
+es2=es(l2)
+print("es2",es2)
+es3=es(l2)
+print("es3",es3)
+
+os1=os(l1)
+print("os1=",os1)
+os2=os(l2)
+print("os2=",os2)
+os3=os(l3)
+print("os3=",os3)
+
+print ("Multiplication of summation of esum and osum",(es1+es2+es3)*(os1+os2+os3))
